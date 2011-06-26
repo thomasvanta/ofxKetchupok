@@ -1,0 +1,33 @@
+Csound_001 is working but with resrictions:
+- you cant include Csoudn lib into your project - that means you have to install it on the machine you want to run you app on..
+
+------------------ Info: ------------------
+ofxCsound is an extension to openframeworks - technically it is just a wrapper for the CsoundAPI -
+
+------------------ Install: ------------------
+1.) Currently you need to install Csound5 API on your computer first!
+Download it here: http://sourceforge.net/projects/csound/files/
+
+2.) put the ofxCsound_001 folder into of/addons/
+3.) put the examples under of/addonsExamples/
+4.) Done - try the examples.
+
+
+------------------ Usage: ------------------
+Changes to do, if you start with a blank OF-Xcode-Project:
+	1. add existing Framework "CsoundLib.framework"
+	2. go into compiler settings
+	3. add under Linking->Symbol Ordering Flags: -l_csnd
+	4. Done.
+
+
+
+------------------ Notes: ------------------
+Tests Done:
+	- tested with Csound 5.12 with 32-Bit floats
+	- tested multiple instances of csound in one project
+	- running app on a system without csound installed -> failed lib.dylib not found
+
+Todo:
+	- include the CsoundLib.framework to skip csound installation
+
