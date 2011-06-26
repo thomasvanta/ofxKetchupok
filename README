@@ -1,0 +1,8 @@
+ofxKetchupok is a collection of Openframeworks addons:
+read more about OF on openframeworks.cc
+written by Ketchupok under MIT-License
+
+------------------------------------------
+contains:
+ofxCsound - OF wrapper for Csound programming language API (csounds.com)
+ofx
